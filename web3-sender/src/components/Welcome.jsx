@@ -2,8 +2,7 @@ import React, { useContext } from "react";
 import { AiFillPlayCircle } from "react-icons/ai";
 import { SiEthereum } from "react-icons/si";
 import { BsInfoCircle } from "react-icons/bs";
-
-// import { TransactionContext } from "../context/TransactionContext";
+import { TransactionContext } from "../context/TransactionContext";
 // import { shortenAddress } from "../utils/shortenAddress";
 import { Loader } from ".";
 
@@ -22,7 +21,6 @@ const Input = ({ placeholder, name, type, value, handleChange }) => (
 );
 
 const Welcome = () => {
-  /*
   const {
     currentAccount,
     connectWallet,
@@ -30,7 +28,7 @@ const Welcome = () => {
     sendTransaction,
     formData,
     isLoading,
-  }  = useContext(TransactionContext);
+  } = useContext(TransactionContext);
 
   const handleSubmit = (e) => {
     const { addressTo, amount, keyword, message } = formData;
@@ -41,13 +39,9 @@ const Welcome = () => {
 
     sendTransaction();
   };
-*/
 
-  var currentAccount = true;
   function shortenAddress(t) {}
-  function handleChange() {}
-  var isLoading = false;
-  const handleSubmit = (e) => {};
+
   return (
     <div className="flex w-full justify-center items-center">
       <div className="flex mf:flex-row flex-col items-start justify-between md:p-20 py-12 px-4">
